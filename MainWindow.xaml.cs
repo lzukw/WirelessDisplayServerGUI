@@ -56,6 +56,8 @@ namespace WirelessDisplayServerGUI
             FileInfo executable = new FileInfo(_pathToExecutable);
             if ( ! executable.Exists )
             {
+                MessageBox.Show( $"Path to WirelessDisplayServer-Executable doesn't exist: '{executable.FullName}'. Consider changing App.config or WirelessDisplayServerGUI.dll.config",
+                                "FATAL", MessageBoxButton.OK, MessageBoxImage.Error);
                 throw new FileNotFoundException($"Path to WirelessDisplayServer-Executable doesn't exist: '{executable.FullName}'");
             }
 

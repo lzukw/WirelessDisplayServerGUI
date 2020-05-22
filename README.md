@@ -28,12 +28,18 @@ From within the folder `WirelessDisplayServerGUI` run the following commands:
 mkdir ..\WirelessDisplayServerGUI_executable
 dotnet publish -c Release -o ..\WirelessDisplayServerGUI_executable -r win-x64 --self-contained
 ```
+
 The paremter `--self-contained` creates a 'stand-alone' executable version. This 
 paremeter can be omitted, if .NET-Core version 3.1 is installed on the target system.
 All necessary files are put in the directory `WirelessDisplayServerGUI_executable`.
 The executable to start is called `WirelessDisplayServerGUI.exe`. The configuration
 can still be changed, by changing the contents of `WirelessDisplayServerGUI.dll.config`
 (which is just the original `App.config`-file copied and renamed).
+
+Create a link for example on the desktop, that links to the file 
+`WirelessDisplayServerGUI.exe` in the folder `WirelessDisplayServerGUI_executable`. 
+The program can be run by double-clicking this link. You can also create a 
+start-menu-entry, by creating the link in `%AppData%\Microsoft\Windows\Start Menu\Programs`.
 
 ## Technical Details
 

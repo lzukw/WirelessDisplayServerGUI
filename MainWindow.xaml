@@ -27,7 +27,7 @@
         <TextBlock Grid.Row="1" Text="Log from Server:" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5" FontSize="20"/>
         
         <ScrollViewer x:Name="scrollViewerLog" Grid.Row="2">
-            <TextBlock  x:Name="textblockLog" Text="Test" Margin="5"/>
+            <TextBlock  x:Name="textblockLog" Text="..." Margin="5"/>
         </ScrollViewer>
 
     </Grid>
